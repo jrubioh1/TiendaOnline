@@ -1,0 +1,24 @@
+{% extends 'ProyectoWebApp/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %} # <!-- Con esto hemos cargo los crispy forms que hemos intallado previamente con el pip o con el poetry add django-crispy-forms y añadirlo como app en el archivo setting y pip install crispy-bootstrap4-->
+{% block content %}
+
+
+<form action="" method="POST" style="color: aliceblue;">{% csrf_token %}
+    
+    <div style="width: 75%; margin: auto; ">
+        {{form|crispy}}
+        <input type="submit" class="btn btn-sm btn-success" value="Registrar">
+    </div>
+   
+
+    
+</form>
+
+
+
+
+
+{% endblock %}
+
