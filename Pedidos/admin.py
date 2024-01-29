@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from Pedidos.models import LineaPedido,Pedidos
+
+admin.site.register(Pedidos,LineaPedido)

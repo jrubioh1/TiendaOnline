@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'Carro',
     'Autenticacion',
     'crispy_forms', #mirar abajo, crispy templates, para que se una bootstrap ojo
-    'crispy_bootstrap4'
+    'crispy_bootstrap4',
+    'Pedidos',
 ]
 
 MIDDLEWARE = [
